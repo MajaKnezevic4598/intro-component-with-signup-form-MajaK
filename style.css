@@ -18,11 +18,12 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 h1{
-    font-weight: 700;
+    font-weight: 900;
     color:#fff;
-    font-size: 3.6vw;
-    line-height: 4vw;
+    font-size: 4.4vw;
+    line-height: 4.6vw;
     margin: 0;
+    margin-bottom: 4vh;
 
 }
 .main{
@@ -44,7 +45,7 @@ h1{
     border: 2px solid white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
    
 }
 .left{
@@ -58,11 +59,12 @@ h1{
 .left p{
     color: white;
     font-size: 1.3vw;
+    line-height: 2.3vw;
     margin: 0;
 }
 
 .right {
-    width: 47%;
+    width: 42%;
     height: auto; 
     border: 1px solid white;
     
@@ -106,6 +108,7 @@ h1{
     flex-direction: column;
    align-items: center;
    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  
 
 }
 
@@ -171,6 +174,7 @@ h1{
      text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
      box-shadow: 0 -1px 0 rgba(0,0,0,9.09%);
      cursor: pointer;
+     margin-top:3vh;
 }
 
 .form button +p{
@@ -191,4 +195,90 @@ h1{
     /* background-position: right; */
     background-position-x: 33vw ;
     background-position-y: center;
+}
+
+@media screen and (max-width:1439px){
+    h1{
+        font-size: 3.1vw;
+        line-height: 3.4vw;
+        
+    }
+    .main-conteiner{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .left{
+        width: 43%;
+    }
+    .left p{
+        
+        font-size: 1.1vw;
+        line-height: 1.4vw;
+        font-weight: 400;
+    }
+    .right {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .main {
+        height: auto;
+    }
+    .main-conteiner{
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .left, .right{
+        width: 90%;
+    }
+    h1{
+        font-size: 5vh;
+        line-height: 6vh;
+        text-align: center;
+        margin-top:5vh;
+    }
+
+    .left p{
+        font-size:3vh;
+        line-height: 4vh;
+        text-align: center;
+        margin-bottom: 10vh;
+
+    }
+    .right div:first-child {
+       height: 14vh;
+       flex-direction: column;
+       margin-bottom: 5vh;
+      
+    }
+ .right div:first-child >span:first-of-type{
+   
+    font-size: 2.5vh;
+} 
+.right div:first-child >span:nth-of-type(2){
+   font-size: 2vh;
+} 
+.form input{
+    width: 80%;
+    height: 8vh;
+    margin-top: 4vh;
+}
+
+.form button+p{
+    font-size: 2vh;
+    text-align: center;
+
+}
+.form {
+    margin-bottom: 8vh;
+}
+.error{
+    background-position-x: 50vw;
+}
+.form button+p{
+    font-size: 2vw;
+}
+
 }
