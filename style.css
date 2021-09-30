@@ -42,7 +42,6 @@ h1{
 .main-conteiner{
     width:90%;
     height: 75%;
-    border: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -51,7 +50,6 @@ h1{
 .left{
     width: 47%;
     height: auto;
-    border: 1px solid white;
 }
 
 
@@ -66,14 +64,12 @@ h1{
 .right {
     width: 42%;
     height: auto; 
-    border: 1px solid white;
     
 }
 
 .right div:first-child{
     height: 7vh;
     width: 100%;
-    border: 1px solid white;
     background-color: var(--blue);
     border-radius: 5px;
     color: #fff;
@@ -101,7 +97,6 @@ h1{
 .form {
     width: 100%;
     height: auto;
-    border: 1px solid black;
     border-radius: 12px;
     background-color: #fff;
     display: flex;
@@ -131,18 +126,13 @@ h1{
    
 }
 
-
-
 .form input:focus{
    border-width: 2px;
     font-weight: 700;
-  
-    
+   
 }
 .form input::placeholder{
     font-family:'Poppins', sans-serif;
-    /* padding-left:1vw; */
-   
     color: var(--grey);
     opacity: 80%;
     font-size: 2vh;
@@ -152,12 +142,10 @@ h1{
     margin: 0;
     width: 85%;
     text-align: right;
-    /* visibility: hidden; */
     font-size:1.6vh;
     color:#FF7979;
     font-weight: 900;
     display: none;
-
 }
 
 .form button{
@@ -189,10 +177,8 @@ h1{
 }
 
 .error{
-  
     background-image: url('/images/icon-error.svg');
     background-repeat: no-repeat;
-    /* background-position: right; */
     background-position-x: 33vw ;
     background-position-y: center;
 }
